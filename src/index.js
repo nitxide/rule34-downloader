@@ -1,6 +1,7 @@
-let args = process.argv.slice(2)
-let url = "https://api.r34.app/booru/gelbooru/posts?domain=rule34.xxx&limit=" + args[0] + "&pid=0&tags=" + process.argv.slice(3).join("+")
+let args = process.argv.slice(2);
 
+let url = "https://api.r34.app/booru/gelbooru/posts?domain=" + args[0]  + "&limit=" + args[1] + "&pid=0&tags=" + process.argv.slice(4).join("+");
+console.log(url)
 
 const axios = require("axios").default;
 const request = require("request");
@@ -15,7 +16,6 @@ const download = async(uri, filename, callback) => {
 
 (async() => {
     await axios.get(url).then(r => {
-        console.log(url)
         r.data.forEach(img => {
             let split = img.high_res_file.url.split(".")
             let ext = split[3];
