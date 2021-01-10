@@ -1,13 +1,11 @@
 {
-  "name": "la-hentai",
+  "name": "rule34-downloader",
   "version": "1.0.0",
-  "description": "",
+  "description": "Downloads rule34 images using the r34.app API ",
   "main": "src/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
+  "scripts": {},
+  "author": "Autist69420",
+  "license": "MIT",
   "dependencies": {
     "axios": "^0.21.1",
     "request": "^2.88.2"
