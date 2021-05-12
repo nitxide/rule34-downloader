@@ -2,12 +2,13 @@
 Downloads rule34 images using the r34.app API
 
 # Supported domains
-- yande.re
 - rule34.xxx
-- e621.net
-- rule34.phaheal.net
-- danbooru.domnai.us
+- rule34.paheal.net
+- danbooru.donmai.us
 - gelbooru.com
+- e621.net
+- safebooru.org
+- e926.net
 
 # Setup
 ## Requirements
