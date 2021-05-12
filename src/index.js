@@ -1,7 +1,6 @@
 let args = process.argv.slice(2);
 
-let url = "https://api.r34.app/booru/gelbooru/posts?domain=" + args[0]  + "&limit=" + args[1] + "&pid=0&tags=" + process.argv.slice(4).join("+");
-console.log(url)
+let url = "https://api.r34.app/booru/gelbooru/posts?baseEndpoint=" + args[0]  + "&limit=" + args[1] + "&pid=0&tags=" + process.argv.slice(4).join("+") + "&tagsEndpoint=%2Fautocomplete.php&defaultQueryIdentifiersTagsTag=q&defaultQueryIdentifiersTagsTagEnding=";
 
 const axios = require("axios").default;
 const request = require("request");
